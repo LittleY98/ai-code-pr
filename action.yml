@@ -1,0 +1,32 @@
+name: "AI 代码审查"
+description: "使用 OpenAI 兼容模型为 Pull Request 提供 AI 驱动的代码审查"
+inputs:
+  API_KEY:
+    description: "OpenAI 兼容服务的 API 密钥"
+    required: true
+  API_BASE_URL:
+    description: "API 基础 URL（例如 https://api.openai.com/v1）。路径 /chat/completions 会自动追加。"
+    required: false
+    default: "https://api.openai.com/v1"
+  MODEL:
+    description: "使用的 AI 模型"
+    required: false
+    default: "gpt-4o"
+  SYSTEM_PROMPT:
+    description: "AI 审查者的自定义系统提示词"
+    required: false
+    default: "You are an expert code reviewer. Review the provided code changes and give clear, actionable feedback."
+  REVIEWER_NAME:
+    description: "审查评论头部显示的名称"
+    required: false
+    default: "AI Code Review"
+  GITHUB_TOKEN:
+    description: "用于 API 访问的 GitHub 令牌"
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "check-circle"
+  color: "purple"
