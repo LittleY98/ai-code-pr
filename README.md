@@ -143,11 +143,3 @@ MODEL: llama-3.3-70b-versatile
           SYSTEM_PROMPT: ${{ vars.SYSTEM_PROMPT }}
           REVIEWER_NAME: ${{ vars.REVIEWER_NAME }}
 ```
-
-## 贡献指南
-
-欢迎贡献代码。详见 [CONTRIBUTING](CONTRIBUTING.md) 文件。
-
-## 许可证
-
-本项目采用 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
