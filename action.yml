@@ -1,4 +1,4 @@
-name: "AI 代码审查"
+name: "ai-code-review"
 description: "使用 OpenAI 兼容模型为 Pull Request 提供 AI 驱动的代码审查"
 inputs:
   API_KEY:
