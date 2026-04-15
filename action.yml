@@ -1,4 +1,4 @@
-name: "openai-code-review"
+name: "openai cr"
 description: "使用 OpenAI 兼容模型为 Pull Request 提供 AI 驱动的代码审查"
 inputs:
   API_KEY:
